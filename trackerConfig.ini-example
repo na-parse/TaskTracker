@@ -1,0 +1,20 @@
+# trackerConfig - Config file for the taskTracker work activity tracking service
+
+# IPADDR - Sets the IP address for the server to listen on.  Set to 0.0.0.0 to enable all
+#   interfaces on the system.
+IPADDR = 127.0.0.1
+
+# PORT - Set a port ID to run the Web service on.  Flask default is 5000.  Ensure the
+#   selected port is not already in use by another service.
+PORT = 31310
+
+# WORKER - Email address for the worker tracking their work activities.  This will be
+#   used as the Sender for work summary updates.  Copies sent to this address.
+WORKER = employee@example.com
+
+# MANAGER - Email address for the manager/superivsor of the worker.  This will be used
+#   as the Recipient for work summary updates.
+MANAGER = manager@example.com
+
+# SENDER - TODO / Want to setup some plans for how sending is determined.
+#   Plan is for a 'Minimum Pending'
